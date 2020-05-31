@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.473">
+    <testcase classname="Validating place API's" name="_2" time="1.737">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given Rates API.............................................................passed
+When user calls "ratesapi" with "get" http request..........................failed
+Then the Api call is success with status code 200...........................skipped
+And "status" in response body is "OK".......................................skipped
+And "base" in response body is "EUR"........................................skipped
+And "date" in response body is "2010-01-11".................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepdefinations.StepDefination.user_calls_with_http_request(StepDefination.java:41)
+	at ✽.user calls "ratesapi" with "get" http request(file:///C:/OCP/JAVA/java-developer/Cucumber_Framework_Sync/src/test/java/features/ratesapiValidations.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

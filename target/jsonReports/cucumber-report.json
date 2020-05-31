@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-31T10:53:05.322Z",
+        "line": 3,
+        "name": "",
+        "description": "\tVerify if the Rates API for specific date foreign exchange rates works fine ",
+        "id": "validating-place-api-s;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1177473000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Rates API",
+            "match": {
+              "location": "stepdefinations.StepDefination.rates_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinations.StepDefination.user_calls_with_http_request(StepDefination.java:41)\r\n\tat ✽.user calls \"ratesapi\" with \"get\" http request(file:///C:/OCP/JAVA/java-developer/Cucumber_Framework_Sync/src/test/java/features/ratesapiValidations.feature:6)\r\n",
+              "duration": 243036400,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user calls \"ratesapi\" with \"get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ratesapi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"get\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinations.StepDefination.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39998300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the Api call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinations.StepDefination.the_Api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19500200,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinations.StepDefination.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10002900,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinations.StepDefination.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17501500,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "\"date\" in response body is \"2010-01-11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"date\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"2010-01-11\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinations.StepDefination.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ratesapi"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place API\u0027s",
+    "description": "",
+    "id": "validating-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/ratesapiValidations.feature",
+    "tags": []
+  }
+]
